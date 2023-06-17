@@ -1,4 +1,4 @@
 FROM python:3.9
-ADD main.py /
+RUN wget -O main.py https://raw.githubusercontent.com/RubenShaw1/discord-bot/main/bot.py
 RUN pip install discord discord.ext
 CMD [“python”, “./main.py”] 
