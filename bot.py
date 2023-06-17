@@ -5,9 +5,8 @@ import requests
 
 bot = commands.Bot(command_prefix='/')
 
-token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+token = os.environ['TOKEN']
 
-shlink_api_key = 'null'
 
 @bot.event
 async def on_ready():
