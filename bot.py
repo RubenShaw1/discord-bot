@@ -4,10 +4,9 @@ from discord.ext import commands
 import requests
 import os
 
-bot = commands.Bot(command_prefix='/')
+bot = commands.Bot(command_prefix='/', intents=discord.Intents.all())
 
 token = os.environ['TOKEN']
-
 
 @bot.event
 async def on_ready():
@@ -37,7 +36,3 @@ async def announce(ctx, *, announcement: str):
 
 
 bot.run(token)
-
-
-
-
