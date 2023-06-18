@@ -2,9 +2,9 @@ name: Docker upload
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    paths:
+      - 'Dockerfile'
+    
 
 jobs:
   build:
