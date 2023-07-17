@@ -3,6 +3,9 @@ Custom discord bot
 
 # Installation
 Just run
-```docker run -d -e TOKEN= rubensh/discordbot:latest```
+```
+TOKEN=YOUR-BOT-TOKEN     #find this in the discord developer portal - https://discord.com/developers/applications
 
-REMEMBER: Insert your token into the enviroment variable above.
+docker run -d -e TOKEN=$TOKEN rubensh/discordbot:latest
+```
+
